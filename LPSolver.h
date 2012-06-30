@@ -1,11 +1,25 @@
 /*
 Solver of a linear program.
-Ghasem Naddaf 26 June 2012.
-This file contains interface for 4 classes:
-Matrix class is the container for a 2D dynamic array.
-Tableau class is the container for an LP tableau and implements the SIMPLEX solver for canoncal Tableau. It inherits from Matrix.
-TableauSolver class is composed of a Tableau, and can make it canonical (if needed).
-LPSolver class gets an LP and makes the corresponding Tableau by adding necessary slack variables.
+    Copyright (C) 2012,  Ghasem Naddaf
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    For the GNU General Public License, see <http://www.gnu.org/licenses/>.
+*/
+/*
+	This file contains interface for 4 classes:
+	Matrix class is the container for a 2D dynamic array.
+	Tableau class is the container for an LP tableau and implements the SIMPLEX solver for canoncal Tableau. It inherits from Matrix.
+	TableauSolver class is composed of a Tableau, and can make it canonical (if needed).
+	LPSolver class gets an LP and makes the corresponding Tableau by adding necessary slack variables.
 */
 
 #ifndef __LPSOLVER_H__

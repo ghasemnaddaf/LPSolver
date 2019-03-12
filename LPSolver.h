@@ -1,7 +1,4 @@
 /*
-Solver of a linear program.
-    Copyright (C) 2012,  Ghasem Naddaf
-
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
@@ -15,7 +12,7 @@ Solver of a linear program.
     For the GNU General Public License, see <http://www.gnu.org/licenses/>.
 */
 /*
-	This file contains interface for 4 classes:
+	LPSolver.h:  Contains interface for 4 classes:
 	Matrix class is the container for a 2D dynamic array.
 	Tableau class is the container for an LP tableau and implements the SIMPLEX solver for canoncal Tableau. It inherits from Matrix.
 	TableauSolver class is composed of a Tableau, and can make it canonical (if needed).
@@ -25,11 +22,12 @@ Solver of a linear program.
 #ifndef __LPSOLVER_H__
 #define __LPSOLVER_H__
 #include <vector>
-#include<limits>
-#include<math.h>
-#include<iostream>
-#include<iomanip>
-#include<assert.h>
+#include <cfloat>
+#include <limits>
+#include <math.h>
+#include <iostream>
+#include <iomanip>
+#include <assert.h>
 
 #define MAXVARS 10000	//maximum number of variables
 #define MAXCSTS 128		//maximum number of constraints
